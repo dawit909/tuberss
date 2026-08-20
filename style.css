@@ -1,0 +1,48 @@
+/* Tooltip matching "Screenshot 2026-08-20 at 10.16.22 PM.png" */
+#yt-rss-tooltip {
+    position: absolute;
+    background-color: #282828;
+    color: #e3e3e3;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-family: "Google Sans", "Roboto", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    transform: translateX(-50%); /* Centers the tooltip horizontally */
+}
+
+/* Toast matching "Screenshot 2026-08-20 at 10.18.23 PM.png" */
+#yt-rss-toast {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    background-color: #202124; /* Deep dark background */
+    color: #f1f3f4;
+    padding: 14px 24px;
+    border-radius: 12px; /* Moderately rounded edges */
+    font-family: "Google Sans", "Roboto", "Arial", sans-serif;
+    font-size: 14px;
+    z-index: 10000;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Class added via JS to slide the toast up and fade it in */
+#yt-rss-toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Visual cue that the avatar is clickable */
+.yt-rss-avatar-ready {
+    cursor: pointer !important;
+}

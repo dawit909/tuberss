@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>YouTuberss Settings</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; color: #333; }
+        .setting { margin-bottom: 12px; font-size: 14px; }
+        #save-btn { padding: 6px 16px; margin-top: 10px; cursor: pointer; }
+        #status { color: #2e7d32; margin-left: 10px; opacity: 0; transition: opacity 0.3s; }
+    </style>
+</head>
+<body>
+    <h3>RSS Link Preference</h3>
+    <div class="setting">
+        <label>
+            <input type="radio" name="feedType" value="all"> 
+            All Contents (Includes Shorts)
+        </label>
+    </div>
+    <div class="setting">
+        <label>
+            <input type="radio" name="feedType" value="videos"> 
+            Only Videos (Excludes Shorts)
+        </label>
+    </div>
+    <button id="save-btn">Save Preference</button>
+    <span id="status">Saved!</span>
+
+    <script src="options.js"></script>
+</body>
+</html>
